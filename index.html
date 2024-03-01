@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0a8a1750b6.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo" alt=""> -->
+                <h1 class="logo"><span>ⓗ</span>𝐚яƗ</h1>
+                <ul id = "sidemenue">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    
+                    <i class="fa-solid fa-xmark" onclick="closemenue()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenue()"></i>
+
+            </nav>
+            <div class="header_text">
+                <h1>Hi, I'm <br><span>Hari</span> From India</h1>
+            <span id="element"><p ></p></span>
+            <br>
+            <a href="Updated Resume.pdf" download class="btn btn2">Download CV</a>
+            
+            </div>
+
+        </div>
+    </div>
+<!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</p>
+                    <h1 class="sub-title Education">Education</h1>
+                    
+                    <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Engineering</p>
+                    <p class="tab-links" onclick="opentab('Education')">Higher Secondary</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Secondary</p>
+                    
+                    
+                </div>
+                <div class="tab-contains active-tab" id="skills">
+                    <ul>
+                        <div class="study">
+                            <p><span>Bachelor of Computer Science and Engineering  with <br> Specialization in Artificial Intelligence & Machine Learning</span></p>
+                            <p class="school">Chandigarh University,Gharuan,Punjab</p>
+                            <p>September 2021 - June 2025</p>
+                        </div>
+                    </ul>
+                </div>
+                <div class="tab-contains" id ="Education">
+                    <ul>
+                        <div class="study">
+                            <p><span> Mathematics, Physics, and Chemistry(MPC)</span></p>
+                            <p class="school">Narayana Junior College, Kushaiguda, Telangana</p>
+                            <p>June 2018 - March 2021</p>
+                        </div>
+                    </ul>
+                </div>
+                <div class="tab-contains" id = "Experience">
+                    <ul>
+                        <div class="study">
+                            <p><span>State Board of Telangana</span></p>
+                            <p class="school">Brilliant Grammar High School, ECIL, Telanagana</p>
+                            <p></p>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="services-list">
+            <div class="Skil">
+                <i class="fa-solid fa-code" id="d" ></i>
+                <h2>Technical Language</h2>
+                <div class="s">
+                <div class="sk"><i class="fa-brands fa-java"></i>Java</div>
+                <div class="sk"><i class="fa-brands fa-python icon"></i>Python</div>
+                <div class="sk"><i class="fa-brands fa-html5"></i>HTML</div>
+                <div class="sk"><i class="fa-brands fa-css3-alt"></i>CSS</div>
+                <div class="sk"><i class="fa-brands fa-js"></i>Java Scripta</div>
+                <div class="sk"><box-icon name='data' color="white" ></box-icon>SQL</div>
+                <div class="sk"><box-icon name='c-plus-plus'color="white" type='logo' ></box-icon>C/C++</div>
+                <div class="sk"><i class="fa-brands fa-java"></i>Flutter</div>
+                <div class="sk"><i class="fa-brands fa-java"></i>UI/UX</div>
+            </div>
+               
+            </div>
+            <div class="Skil">
+                <i class="fa-solid fa-code" id="d" ></i>
+                <h2>Domain</h2>
+                <div class="s">
+                <div class="sk">Artificial Intelligence</div>
+                <div class="sk">Mechine Learning</div>
+                <div class="sk">Deep Learning</div>
+                <div class="sk">Computer Vision</div>
+                <div class="sk">Natural Language Processing</div>
+                <div class="sk">Data Base Management System</div>
+                <div class="sk">Computer Networks</div>
+                <div class="sk">Operating System</div>
+                <div class="sk">Data Structures And Algorirthms</div>
+            </div>
+               
+            </div>
+            <div class="Skil">
+                <i class="fa-solid fa-code" id="d" ></i>
+                <h2>Other Frame works</h2>
+                <div class="s">
+                <div class="sk">Open Cv</div>
+                <div class="sk">Hugging Face</div>
+                <div class="sk">NLTK</div>
+                <div class="sk">Pandas</div>
+                <div class="sk">Sk Learn</div>
+                <div class="sk">Git</div>
+                <div class="sk">Linux</div>
+                <div class="sk">Windows</div>
+                <div class="sk">TensorFlow</div>
+            </div>
+               
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+<!-- My Work -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/LanguageTranslation.png" alt="">
+                <div class="layer">
+                    <h3>
+                        Language Translation
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste animi numquam quibusdam minima earum tenetur,</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/road.png" height="" alt="">
+                <div class="layer">
+                    <h3>
+                        Vechile Counting & Classification
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste animi numquam quibusdam minima earum tenetur,</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/Movie.png" alt="">
+                <div class="layer">
+                    <h3>
+                         Movie Recommendation
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste animi numquam quibusdam minima earum tenetur,</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <a href=""class="btn">See More</a>
+    </div>
+</div>
+
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>harivardhanr264@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 7780448632</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <!-- <a href=""><i class="fa-solid fa-phone"></i></a> -->
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="https://formspree.io/f/xqkrbnvo" method="POST">
+                    <input type="text" name = "Name" placeholder="Your Name" required>
+
+                    <input type="email" name = "email" placeholder="Your email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>                    
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Love you Guys<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contains");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+    var sidemenu = document.getElementById("sidemenue");
+    function openmenue(){
+        sidemenu.style.right = "0";
+
+    }
+    function closemenue(){
+        sidemenu.style.right = "-200px";
+    }
+    var typed = new Typed('#element', {
+      strings: ['Innovatie Engineer', 'Data Scientist','Web Developer','Coder'],
+      typeSpeed: 100,
+      loop:true,
+      backSpeed:50
+    });
+
+</script>
+</body>
+</html>
