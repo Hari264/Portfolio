@@ -472,3 +472,234 @@ nav .fa-solid{
 
 
 }
+
+
+/* Projects Section Enhancements */
+#portfolio {
+    padding: 80px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.work:hover {
+    transform: translateY(-10px);
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    height: 300px;
+    object-fit: cover;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(255,0,79,0.7));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.layer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tech-tag {
+    background: rgba(255,255,255,0.2);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.layer a {
+    color: #fff;
+    background: rgba(255,255,255,0.3);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.layer a:hover {
+    background: #fff;
+    color: #ff004f;
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+/* See More Button */
+#see-more-btn {
+    position: relative;
+    transition: all 0.3s;
+}
+
+#see-more-btn:hover {
+    background: #fff;
+    color: #ff004f;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+    .work-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .work img {
+        height: 250px;
+    }
+    
+    .layer h3 {
+        font-size: 20px;
+    }
+    
+    .layer p {
+        font-size: 13px;
+    }
+}
+
+
+
+/* Certifications Section */
+#certifications {
+    padding: 80px 0;
+    background: #080808;
+}
+
+.certifications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.certification {
+    background: #262626;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Ensure all cards have the same height */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.certification:hover {
+    transform: translateY(-10px);
+}
+
+.certification img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ff004f;
+}
+
+.cert-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cert-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.cert-info p {
+    color: #ababab;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.cert-date {
+    color: #ff004f;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.cert-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s;
+    margin-top: auto;
+}
+
+.cert-link i {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.cert-link:hover {
+    color: #ff004f;
+}
+
+/* Hidden certifications - will inherit all other styles */
+.more-certs {
+    display: none;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .certifications-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .certification img {
+        height: 180px;
+    }
+}
