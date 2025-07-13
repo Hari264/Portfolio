@@ -20,6 +20,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Skills</a></li>
                     <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contacts</a></li>
                     
                     <i class="fa-solid fa-xmark" onclick="closemenue()"></i>
@@ -32,7 +33,7 @@
                 <h1>Hi, I'm <br><span>Hari</span> From India</h1>
             <span id="element"><p ></p></span>
             <br>
-            <a href="Updated Resume (2).pdf" download class="btn btn2">Download CV</a>
+            <a href="Updated Resume.pdf" download class="btn btn2">Download CV</a>
             
             </div>
 
@@ -42,7 +43,7 @@
     <div id="about">
         <div class="container">
             <div class="row">
-               
+                
                 <div class="about-col2">
                     <h1 class="sub-title">About Me</h1>
                     <p>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</p>
@@ -55,6 +56,7 @@
                     
                     
                 </div>
+                
                 <div class="tab-contains active-tab" id="skills">
                     <ul>
                         <div class="study">
@@ -82,12 +84,14 @@
                         </div>
                     </ul>
                 </div>
-                     <div class="about-col1">
-                    <img src="images/Hari.png" alt="">
                 </div>
+                <div class="about-col1">
+                    <img src="images/Insta.jpg" alt="">
                 </div>
             </div>
+            
         </div>
+        
     </div>
 <!-- Services -->
 <div id="services">
@@ -144,51 +148,176 @@
             </div>
             
         </div>
-
+        
     </div>
 </div>
 <!-- My Work -->
-<!-- <div id="portfolio">
+<!-- My Work -->
+<!-- My Work -->
+<div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Project</h1>
+        <h1 class="sub-title">My Projects</h1>
         <div class="work-list">
+            <!-- Initial Projects (Visible by default) -->
             <div class="work">
-                <img src="images/LanguageTranslation.png" alt="">
+                <img src="images/LanguageTranslation.png" alt="Language Translation Project">
                 <div class="layer">
-                    <h3>
-                        Language Translation
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste animi numquam quibusdam minima earum tenetur,</p>
-                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>Language Translation</h3>
+                    <p>Developed an AI-powered translation system supporting multiple languages with real-time processing.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Transformers</span>
+                    </div>
+                    <a href="https://github.com/Hari264/AI-Enhanced-LAnguage-Translation"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
-
             </div>
             <div class="work">
-                <img src="images/road.png" height="" alt="">
+                <img src="images/Directory.jpg" alt="Vehicle Counting Project">
                 <div class="layer">
-                    <h3>
-                        Vechile Counting & Classification
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste animi numquam quibusdam minima earum tenetur,</p>
-                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>Thread-Safe-Virtual-Directory-Management-System</h3>
+                    <p>A thread-safe virtual directory management system using TreeMap that provides concurrent access to hierarchical file structures while maintaining data consistency and performance</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Collections</span>
+                        <span class="tech-tag">Oops</span>
+                        <span class="tech-tag">TreeMap</span>
+                    </div>
+                    <a href="https://github.com/Hari264/Thread-Safe-Virtual-Directory-Management-System-"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
-
             </div>
             <div class="work">
-                <img src="images/Movie.png" alt="">
+                <img src="images/Movie.png" alt="Movie Recommendation Project">
                 <div class="layer">
-                    <h3>
-                         Movie Recommendation
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste animi numquam quibusdam minima earum tenetur,</p>
-                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>Movie Recommendation</h3>
+                    <p>Content-based recommendation engine using cosine similarity and collaborative filtering techniques.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Sklearn</span>
+                    </div>
+                    <a href="https://github.com/Hari264/Movie-Recommendation"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
-
             </div>
+            
+            <!-- Additional Projects (Hidden by default) -->
+            <div class="work more-projects" style="display: none;">
+                <img src="images/Facial-Emotion-Detection-Using-CNN.webp" alt="Project 4">
+                <div class="layer">
+                    <h3>Automatic-Feedback-Receiver</h3>
+                    <p>A real-time facial emotion recognition system using CNN that automatically analyzes user expressions to provide instant feedback.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">OpenCv</span>
+                    </div>
+                    <a href="https://github.com/Hari264/Automatic-Feedback-Receiver"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- <div class="work more-projects" style="display: none;">
+                <img src="images/project5.jpg" alt="Project 5">
+                <div class="layer">
+                    <h3>Chatbot Assistant</h3>
+                    <p>Conversational AI assistant built with transformer architecture.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">DialoGPT</span>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work more-projects" style="display: none;">
+                <img src="images/project6.jpg" alt="Project 6">
+                <div class="layer">
+                    <h3>Image Classification</h3>
+                    <p>Deep learning model for classifying images into 100 different categories.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">ResNet</span>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div> -->
         </div>
-        <a href=""class="btn">See More</a>
+        <a href="#" class="btn" id="see-more-btn">See More</a>
     </div>
-</div> -->
+</div>
+
+
+
+<!-- Certifications -->
+<!-- Certifications --><!-- Certifications -->
+<div id="certifications">
+    <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="certifications-list">
+            <!-- Initial Certifications (Visible by default) -->
+            <div class="certification">
+                <img src="images/Pij.jpeg" alt="Machine Learning Certification">
+                <div class="cert-info">
+                    <h3>Programming Using Java</h3>
+                    <p>Infosys Springboard</p>
+                    <div class="cert-date">Issued: June 2025</div>
+                    <a href="https://drive.google.com/file/d/1B-vO_OWSGPYnJKCzlt-LsYNTTxCqR5F5/view?usp=sharing" class="cert-link">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <div class="certification">
+                <img src="images/DBMS.jpeg" alt="Python Certification">
+                <div class="cert-info">
+                    <h3>Database Management System</h3>
+                    <p>Infosys Springboard</p>
+                    <div class="cert-date">Issued: June 2025</div>
+                    <a href="https://drive.google.com/file/d/1HHU8sTXbbamc0U80EdfPGUukYvk5GuGb/view?usp=sharing" class="cert-link">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <div class="certification">
+                <img src="images/Java.jpeg" alt="Deep Learning Certification">
+                <div class="cert-info">
+                    <h3>Java Foundation Certification</h3>
+                    <p>Infosys Springboard</p>
+                    <div class="cert-date">Issued: June 2025</div>
+                    <a href="https://drive.google.com/file/d/1MtA8ZRf72ZNUjdbFOaZYF3cRYltae-Ro/view?usp=sharing" class="cert-link">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <!-- Additional Certifications (Hidden by default) -->
+            <!-- <div class="certification more-certs" style="display: none;">
+                <img src="images/cert4.jpg" alt="AWS Certification">
+                <div class="cert-info">
+                    <h3>AWS Certified Cloud Practitioner</h3>
+                    <p>Amazon Web Services</p>
+                    <div class="cert-date">Issued: January 2024</div>
+                    <a href="#" class="cert-link">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <div class="certification more-certs" style="display: none;">
+                <img src="images/cert5.jpg" alt="Google Data Analytics">
+                <div class="cert-info">
+                    <h3>Google Data Analytics</h3>
+                    <p>Google | Coursera</p>
+                    <div class="cert-date">Issued: November 2023</div>
+                    <a href="#" class="cert-link">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <div class="certification more-certs" style="display: none;">
+                <img src="images/cert6.jpg" alt="TensorFlow Developer">
+                <div class="cert-info">
+                    <h3>TensorFlow Developer Certificate</h3>
+                    <p>TensorFlow</p>
+                    <div class="cert-date">Issued: August 2023</div>
+                    <a href="#" class="cert-link">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> -->
+        </div>
+        <a href="#" class="btn" id="see-more-certs">See More Certifications</a>
+    </div>
+</div>
 
 <!-- contact -->
 <div id="contact">
@@ -199,9 +328,9 @@
                 <p><i class="fa-solid fa-envelope"></i>harivardhanr264@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i>+91 7780448632</p>
                 <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/Hari264/Portfolio"><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/u/Hari_2604/"><i class="fa fa-code" aria-hidden="true"></i></a>
+                    <a href="https://github.com/Hari264"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hari-vardhan-reddy/"><i class="fa-brands fa-linkedin"></i></a>
                     <!-- <a href=""><i class="fa-solid fa-phone"></i></a> -->
                 </div>
             </div>
@@ -251,7 +380,50 @@ function opentab(tabname){
       loop:true,
       backSpeed:50
     });
+// Add this to your existing script section
+document.getElementById('see-more-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    const moreProjects = document.querySelectorAll('.more-projects');
+    const seeMoreBtn = document.getElementById('see-more-btn');
+    
+    // Toggle display of hidden projects
+    moreProjects.forEach(project => {
+        if (project.style.display === 'none' || !project.style.display) {
+            project.style.display = 'block';
+            seeMoreBtn.textContent = 'See Less';
+        } else {
+            project.style.display = 'none';
+            seeMoreBtn.textContent = 'See More';
+        }
+    });
+    
+    // Scroll to the newly shown projects
+    if (moreProjects[0].style.display === 'block') {
+        moreProjects[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+});
 
+// Certifications "See More" functionality
+document.getElementById('see-more-certs')?.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    const hiddenCerts = document.querySelectorAll('.more-certs');
+    const seeMoreBtn = this;
+    
+    // Show all hidden certifications
+    hiddenCerts.forEach(cert => {
+        cert.style.display = 'flex'; // Changed to flex to match parent
+    });
+    
+    // Hide the "See More" button after clicking
+    seeMoreBtn.style.display = 'none';
+    
+    // Smooth scroll to the newly shown certifications
+    if (hiddenCerts.length > 0) {
+        hiddenCerts[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+});
 </script>
 </body>
 </html>
